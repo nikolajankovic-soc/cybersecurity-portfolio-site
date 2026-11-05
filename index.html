@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Nikola Janković | Cybersecurity Portfolio</title>
+
+  <!-- Connect external CSS -->
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <!-- WEBSITE HEADER -->
+  <header>
+    <h1>Nikola Janković</h1>
+    <p>Cybersecurity Enthusiast | Aspiring SOC Analyst</p>
+    <p>Learning Full-Stack Web Development</p>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="projects.html">Project Details</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN WEBSITE CONTENT -->
+  <main>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h2>About Me</h2>
+      
+<img
+  src="images/profile.jpg"
+  alt="Portrait of Nikola Janković"
+  class="profile-image"
+>
+
+
+      <p>
+        I am transitioning into cybersecurity with
+        a clear career goal: to become an Entry-Level
+        / Junior SOC Analyst.
+      </p>
+
+      <p>
+        My current focus is security monitoring,
+        SIEM alert triage, phishing investigation,
+        network traffic analysis, malware triage,
+        IOC enrichment, and structured incident
+        reporting.
+      </p>
+
+      <p>
+        I have completed the Google Cybersecurity
+        Professional Certificate and the Let's
+        Defend SOC Analyst Learning Path, gaining
+        hands-on exposure to SOC workflows,
+        alert investigation, log review,
+        incident handling, and escalation.
+      </p>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <h3>Cybersecurity Projects</h3>
+      <ul>
+        <li>Basic Malware Triage Project</li>
+        <li>Brute Force Investigation Project</li>
+        <li>Phishing Excel 4.0 Macro Investigation</li>
+      </ul>
+
+      <h3>Web Development Projects</h3>
+      <ul>
+        <li>Personal Portfolio Website</li>
+        <li>Business Website (Planned)</li>
+        <li>Booking Application (Planned)</li>
+      </ul>
+     
+      <a href="projects.html" class="button-link">
+        Explore My Projects
+      </a>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <h2>My Skills</h2>
+
+      <ul>
+        <li>Security Monitoring and SIEM</li>
+        <li>Incident Response</li>
+        <li>Phishing Investigation</li>
+        <li>Network Traffic Analysis</li>
+        <li>Malware Triage</li>
+        <li>Python Programming</li>
+        <li>HTML Web Development</li>
+      </ul>
+
+      <p>
+        <a href="https://www.linkedin.com/in/nikola-jankovic-7242a923a/">
+          Visit My LinkedIn Profile
+        </a>
+      </p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <p>
+    Interested in discussing cybersecurity,
+    employment opportunities or collaboration?
+    Complete the form below.
+  </p>
+
+  <form id="contact-form"
+        action="#"
+        method="post">
+
+    <!-- Name -->
+    <div class="form-group">
+      <label for="full-name">
+        Full Name *
+      </label>
+
+      <input
+        type="text"
+        id="full-name"
+        name="fullName"
+        placeholder="Enter your full name"
+        autocomplete="name"
+        required
+      >
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">
+        Email Address *
+      </label>
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="name@example.com"
+        autocomplete="email"
+        required
+      >
+    </div>
+
+    <!-- Subject -->
+    <div class="form-group">
+      <label for="subject">
+        Subject *
+      </label>
+
+      <select
+        id="subject"
+        name="subject"
+        required
+      >
+        <option value="" selected disabled>
+          Select a subject
+        </option>
+        <option value="job">
+          Job Opportunity
+        </option>
+        <option value="collaboration">
+          Cybersecurity Collaboration
+        </option>
+        <option value="website">
+          Website Inquiry
+        </option>
+        <option value="other">
+          Other
+        </option>
+      </select>
+    </div>
+
+    <!-- Message -->
+    <div class="form-group">
+      <label for="message">
+        Your Message *
+      </label>
+
+      <textarea
+        id="message"
+        name="message"
+        rows="6"
+        minlength="10"
+        maxlength="2000"
+        placeholder="Write your message here..."
+        required
+      ></textarea>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" class="submit-btn">
+      Send Message
+    </button>
+
+    <p id="form-status" role="status"></p>
+
+ 
+    </form>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    &copy; 2026 Nikola Janković.
+    All Rights Reserved.
+  </p>
+</footer>
+
+
+<script>
+  const contactForm =
+    document.querySelector("#contact-form");
+
+  const formStatus =
+    document.querySelector("#form-status");
+
+  contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    formStatus.textContent =
+      "Demo successful! Your fields are valid. " +
+      "No message has been sent.";
+  });
+</script>
+
+</body>
+</html>
+
